@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
+import { IDialogConfiguration } from '../store/IStoreInterfaces'
 import { updateDialogConfiguration } from '../store/actions/AppActions'
-import { IDialogConfiguration } from '../interfaces/IDialogConfiguration'
 
 export const closedDialogConfiguration: IDialogConfiguration = {
   show: false,

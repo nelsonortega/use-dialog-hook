@@ -1,3 +1,7 @@
+export interface IAppInitialState {
+  dialogConfiguration: IDialogConfiguration
+}
+
 export interface IDialogConfiguration {
   show: boolean
   close: Function

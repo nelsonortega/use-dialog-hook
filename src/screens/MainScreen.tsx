@@ -2,8 +2,8 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { StyleSheet, View } from 'react-native'
 import Button, { ButtonTypes } from '../components/Button'
+import { IDialogConfiguration } from '../store/IStoreInterfaces'
 import { updateDialogConfiguration } from '../store/actions/AppActions'
-import { IDialogConfiguration } from '../interfaces/IDialogConfiguration'
 import useDialog, { closedDialogConfiguration } from '../hooks/useDialog'
 
 const MainScreen = () => {

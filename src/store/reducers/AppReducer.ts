@@ -1,7 +1,15 @@
-import { initialState } from '../AppInitialState'
-import { AppActions } from '../actions/AppActions'
-import { IAppActions } from '../../interfaces/IAppActions'
-import { IAppInitialState } from '../../interfaces/IAppInitialState'
+import { IAppInitialState } from '../IStoreInterfaces'
+import { AppActions, IAppActions } from '../actions/AppActions'
+
+const initialState: IAppInitialState  = {
+  dialogConfiguration: {
+    show: false,
+    message: '',
+    buttonText: '',
+    close: () => {},
+    buttonClick: () => {}
+  }
+}
 
 const AppReducer = (state: IAppInitialState = initialState, action: IAppActions) => {
   switch (action.type) {
